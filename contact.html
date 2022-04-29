@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap">  <!-- dodanie własnej czcionki do  strony -->
+    <!-- <link rel="stylesheet" href="styles.js"> -->
 
+
+    <style>
+        li {
+            color: rgb(6, 84, 87);
+        }
+
+    </style>
 </head>
 <body>
     <div>Contact. Here could be contact html form</div>
-        <div> My skilss
+    
+        <div class="myskills"> My skills
 
 
             <ul> Lista nieuporządkowana
@@ -24,7 +35,7 @@
 
             </ol>
 
-            <table border="1">
+            <!-- <table class="table" border="1">
                 <tr>
                     <th>Nazwa pierwszej kolumny</th>
                     <th>Nazwa drugiej kolumny</th>
@@ -41,15 +52,17 @@
                     <td>wiersz2</td>
                 </tr>
                 <tr>
-                    <td style="color:rgb(23, 0, 128)">wiersz3</td>
+                    <td style="color:rgb(23, 0, 128)">wiersz3</td>   
                     <td style="color:green">wiersz3</td>
                     <td style="color:rgb(230, 25, 76)">wiersz3</td>
                 </tr>
             </table>
-            <br><br><br>
+            <br><br><br> -->
 
 
-            <img src="https://picsum.photos/536/354" alt="This is text the the image is inaccessible"><br>
+            <!-- <p style="width: 300px; float: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus possimus adipisci ducimus delectus esse qui ipsa commodi inventore laboriosam unde! 
+                Autem corrupti dignissimos rerum beatae perspiciatis suscipit minus voluptatibus consectetur.</p> -->
+            <img src="https://picsum.photos/536/354" alt="This is text the the image is inaccessible" ><br>
 
 
             <span>Write me a <strong> message</strong></span>
@@ -62,21 +75,30 @@
 
 
 
-        <form>
+        <form id="message-for-me">
             Imie: <br>
         <input type="text" required><br>   
             email: <br>
-        <input type="email" required><br>
+        <input type="email" required><br> <!--pole na email-->
             Message: <br>
             <textarea required name="" id="" cols="30" rows="10">
 Twoja wiadomosc
-            </textarea>
+            </textarea><!--Pole tekstowe wraz z wymiarami-->
 
             <br><br>
-            <input id="submit" type="submit" value = "submit">
+            <input id="submit" type="submit" value = "submit"> <!-- element input w typie submit czyli przycisk-->
         </form>
         <br><br><br>
 
+        <footer>
+            <p>Paragraf w stopce</p>
+            <div id="footer" >
+                <p>stopka &copy;</p>
+            </div>
+            &copy;
 
+        </footer>
+
+<!-- <script src="styles.js"></script> -->
 </body>
 </html>

@@ -5,50 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pierwsza strona
-        <link rel="stylesheet" href="styles.css">
     </title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap">  <!-- dodanie własnej czcionki do  strony -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.js" type="text/css" media="all"> -->
 </head>
 <body>
-
-
-
+    
+    
     <header>
-        <a href="contact.html">Contact</a>
-        <h2>Tresc&nbsp;pierwszej&nbsp;strony</h2><br>
+        <!-- <div style="clear:both"></div> -->
+        <div>
+            <span>
+                <h2>Tresc&nbsp;pierwszej&nbsp;strony</h2>
+            </span>
+            <span id="contact">
+                <a  href="contact.html">Contact</a>
+            </span>
+        </div>
+        <!-- <div style="clear:both"></div>      zabieg pozwalajacy na to by elementy z lewej i z prawej strony nie starał sie oppłynąć siebie nawzajem -->
+        <div>
+            <h1 style="/*display: none;*/ color: white">Tresc</h1> 
+        </div><!--sposób na komentarz w tagu style inline: style="/*display: none;*/"-->
     </header>
-    <h1>Tresc</h1>
+    <div class="first-class" id="first-id">
+                DIV CLASS 1, ID 1
+        <div class="second-class">
+                DIV CLASS 2
+            <h1 class="third-class">DIV CLASS 3 H1
+                <h1 class="fourth-class">DIV CLASS 4 H1 H1</h1>
+            </h1>
+        </div>
+    </div>
 
     <!-- <a href="https://google.com/">znajdz w google</a> -->
+    <div id="main-content" class="clearFix">
+        <section id="articles">
+            <article style="padding-left: 30px; border: 1px solid "> <!--Odległosć od lewej strony od kontenera w jakim jest dany element, i ramka-->
+                <!-- <p style="border: 1px solid black; padding: 10px; 
+                margin-bottom: 20px; width: 180px;">perwszy post</p><br> -->
+                <p>perwszy post</p><br>
+                <p>druga&nbsp;linia&nbsp;tekstu&nbsp;strony</p> <!-- zastosowanie twardych spacji - używając ich tekst nie jest zawijany przy zmianie szerokosci okna przegladarki-->
+                &#9200;   <!-- i emoji -->
+            </article>
+            <!-- <div style="clear: both"></div> -->
+            <h3>mniejszy </h3>
+            &lt;tekst&gt;  <!--tekst widoczny w znaczkach <> - wykorzystano html entities-->
+            <article>
+                <!-- <p style="border: 1px solid black; padding: 30px; 
+                margin-bottom: 20px; width: 180px;"> -->
+                <p>
+                trzeci post - paragraf 1<strong> <br> trzeci i pól - treść</strong></p>
+                        <p>czwarty linia tekstu strony - paragraf 2</p>
+
+            </article>
+            <article>
+                <p>piaty post - paragraf 3</p><br>
+                <p>szósta linia tekstu strony - paragraf 4</p>
+
+            </article>
+        </section>
+        <table  id="skills" class="table" border="1" style="margin-right: 5px;">
+            <tr>
+                <th>Nazwa pierwszej kolumny</th>
+                <th>Nazwa drugiej kolumny</th>
+                <th>nazwa 3 kolumny</th>
+            </tr>
+            <tr>    
+                <td>wiersz1 kol1</td>
+                <td>wiersz1 kol2</td>
+                <td>wiersz1 kol3</td>
+            </tr>
+            <tr>
+                <td>wiersz2</td>
+                <td>wiersz2</td>
+                <td>wiersz2</td>
+            </tr>
+            <tr>
+                <td style="color:rgb(23, 0, 128)">wiersz3</td>   
+                <td style="color:green">wiersz3</td>
+                <td style="color:rgb(230, 25, 76)">wiersz3</td>
+            </tr>
+        </table>
 
 
-    <article style="padding: 3px">
-        <p>perwszy post</p><br>
-        <p>druga&nbsp;linia&nbsp;tekstu&nbsp;strony</p> <!-- zastosowanie twardych spacji -->
-        &#9200;   <!-- i emoji -->
-    </article>
+    </div>
 
-    <h3>mniejszy </h3>
-    &lt;tekst&gt;
-    <article>
-        <p>trzeci post<br>
-        czwarty linia tekstu strony</p>
-
-    </article>
-    <article>
-        <p>piaty post</p><br>
-        <p>szósta linia tekstu strony</p>
-
-    </article>
-
+    <!-- <div style="clear: both"></div> -->
         <br><br>
         <footer>
-            <div id="footer">
-                stopka &copy;
+            <p>Paragraf w stopce</p>
+            <div id="footer" >
+                <p>stopka &copy;</p>
             </div>
+            &copy;
 
         </footer>
 
 
         <script src="scripts.js"></script>
+        <!-- <script src="styles.js"></script> -->
     </body>
 </html>
